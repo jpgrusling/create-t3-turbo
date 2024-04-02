@@ -21,11 +21,11 @@
     "typecheck": "turbo typecheck"
   },
   "devDependencies": {
-    "@acme/prettier-config": "workspace:*",
+    "@local/prettier-config": "workspace:*",
     "@turbo/gen": "^1.13.0",
     "prettier": "^3.2.5",
     "turbo": "^1.13.0",
     "typescript": "^5.4.3"
   },
-  "prettier": "@acme/prettier-config"
+  "prettier": "@local/prettier-config"
 }
