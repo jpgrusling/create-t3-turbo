@@ -1,18 +1,63 @@
 {
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "cSpell.words": [
+    "autoapply",
+    "bigcommerce",
+    "clsx",
+    "Codegen",
+    "Embla",
+    "headlessui",
+    "heroicons",
+    "Lucide",
+    "Nextjs",
+    "oidc",
+    "oklch",
+    "payloadcms",
+    "RESIZER",
+    "Skus",
+    "tada",
+    "tailwind",
+    "tailwindcss",
+    "Terrateam",
+    "tsup",
+    "turborepo"
+  ],
   "editor.codeActionsOnSave": {
+    "source.formatDocument": "explicit",
     "source.fixAll.eslint": "explicit"
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "eslint.rules.customizations": [{ "rule": "*", "severity": "warn" }],
+  "editor.tabSize": 2,
   "eslint.workingDirectories": [
     { "pattern": "apps/*/" },
     { "pattern": "packages/*/" },
     { "pattern": "tooling/*/" }
   ],
+  "files.exclude": {
+    "**/.cache": true,
+    "**/.DS_Store": true,
+    "**/.git": true,
+    "**/.husky": true,
+    "**/.idea": true,
+    "**/.bundle": true,
+    "**/Thumbs.db": true,
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/build": true,
+    "**/.turbo": true,
+    "**/.next": true,
+    "**/.sst": true,
+    "**/.open-next": true
+  },
+  "files.insertFinalNewline": true,
   "tailwindCSS.experimental.classRegex": [
     ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
-    ["cx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
+    ["cx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"],
+    ["(?:twMerge|twJoin|cn)\\(([^\\);]*)[\\);]", "[`'\"`]([^'\"`,;]*)[`'\"`]"]
   ],
   "tailwindCSS.experimental.configFile": "./tooling/tailwind/web.ts",
   "typescript.enablePromptUseWorkspaceTsdk": true,

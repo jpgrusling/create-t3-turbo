@@ -1,9 +1,20 @@
 {
   "recommendations": [
+    "amazonwebservices.aws-toolkit-vscode",
+    "bradlc.vscode-tailwindcss",
+    "csstools.postcss",
     "dbaeumer.vscode-eslint",
-    "expo.vscode-expo-tools",
     "esbenp.prettier-vscode",
-    "yoavbls.pretty-ts-errors",
-    "bradlc.vscode-tailwindcss"
+    "formulahendry.auto-rename-tag",
+    "ghmcadams.lintlens",
+    "meganrogge.template-string-converter",
+    "mikestead.dotenv",
+    "ms-vsliveshare.vsliveshare",
+    "pflannery.vscode-versionlens",
+    "streetsidesoftware.code-spell-checker",
+    "unifiedjs.vscode-mdx",
+    "wix.vscode-import-cost",
+    "DavidAnson.vscode-markdownlint",
+    "YoavBls.pretty-ts-errors"
   ]
 }
