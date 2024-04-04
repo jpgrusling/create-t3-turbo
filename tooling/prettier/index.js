@@ -19,7 +19,7 @@ const config = {
     'prettier-plugin-tailwindcss',
   ],
   tailwindConfig: fileURLToPath(
-    new URL('../../tooling/tailwind/src/web.ts', import.meta.url),
+    new URL('../../tooling/tailwind/src/tailwind.ts', import.meta.url),
   ),
   tailwindFunctions: ['cn', 'clsx', 'cva', 'tw', 'twMerge', 'classNames'],
   jsonRecursiveSort: true,
