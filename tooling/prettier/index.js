@@ -15,12 +15,14 @@ const config = {
   useTabs: false,
   plugins: [
     '@ianvs/prettier-plugin-sort-imports',
+    'prettier-plugin-sort-json',
     'prettier-plugin-tailwindcss',
   ],
   tailwindConfig: fileURLToPath(
-    new URL('../../tooling/tailwind/web.ts', import.meta.url),
+    new URL('../../tooling/tailwind/src/web.ts', import.meta.url),
   ),
   tailwindFunctions: ['cn', 'clsx', 'cva', 'tw', 'twMerge', 'classNames'],
+  jsonRecursiveSort: true,
   importOrder: [
     '<TYPES>',
     '^(react/(.*)$)|^(react$)|^(react-native(.*)$)',
