@@ -1,7 +1,7 @@
 import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport'
 import { type Preview } from '@storybook/react'
 
-import '../src/styles/styles.css'
+import '../src/styles/index.css'
 
 export const preview: Preview = {
   parameters: {
