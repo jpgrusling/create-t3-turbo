@@ -25,33 +25,33 @@
     "turborepo"
   ],
   "editor.codeActionsOnSave": {
-    "source.formatDocument": "explicit",
-    "source.fixAll.eslint": "explicit"
+    "source.fixAll.eslint": "explicit",
+    "source.formatDocument": "explicit"
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
-  "eslint.rules.customizations": [{ "rule": "*", "severity": "warn" }],
   "editor.tabSize": 2,
+  "eslint.rules.customizations": [{ "rule": "*", "severity": "warn" }],
   "eslint.workingDirectories": [
     { "pattern": "apps/*/" },
     { "pattern": "packages/*/" },
     { "pattern": "tooling/*/" }
   ],
   "files.exclude": {
-    "**/.cache": true,
     "**/.DS_Store": true,
+    "**/.bundle": true,
+    "**/.cache": true,
     "**/.git": true,
     "**/.husky": true,
     "**/.idea": true,
-    "**/.bundle": true,
-    "**/Thumbs.db": true,
-    "**/node_modules": true,
-    "**/dist": true,
-    "**/build": true,
-    "**/.turbo": true,
     "**/.next": true,
+    "**/.open-next": true,
     "**/.sst": true,
-    "**/.open-next": true
+    "**/.turbo": true,
+    "**/Thumbs.db": true,
+    "**/build": true,
+    "**/dist": true,
+    "**/node_modules": true
   },
   "files.insertFinalNewline": true,
   "tailwindCSS.experimental.classRegex": [
