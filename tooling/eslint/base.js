@@ -26,7 +26,7 @@ const config = {
     'import/no-duplicates': ['error'],
     'import/prefer-default-export': ['off'],
     'import/order': ['off'],
-    'import/consistent-type-specifier-style': ['error', 'prefer-top-level'],
+    'import/consistent-type-specifier-style': ['error', 'prefer-inline'],
 
     'no-console': ['warn'],
 
