@@ -1,0 +1,29 @@
+{
+  "name": "@local/themes",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "exports": {
+    "./default.css": "./src/default/index.css",
+    "./package.json": "./package.json"
+  },
+  "license": "MIT",
+  "scripts": {},
+  "devDependencies": {
+    "@local/eslint-config": "workspace:*",
+    "@local/prettier-config": "workspace:*",
+    "@types/eslint": "^8.56.6",
+    "eslint": "^8.57.0",
+    "prettier": "^3.2.5"
+  },
+  "eslintConfig": {
+    "root": true,
+    "extends": [
+      "@local/eslint-config/base"
+    ]
+  },
+  "prettier": "@local/prettier-config"
+}

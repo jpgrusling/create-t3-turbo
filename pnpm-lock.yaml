@@ -239,6 +239,9 @@ importers:
       '@local/tailwind-config':
         specifier: workspace:*
         version: link:../../tooling/tailwind
+      '@local/themes':
+        specifier: workspace:*
+        version: link:../../tooling/themes
       '@local/tsconfig':
         specifier: workspace:*
         version: link:../../tooling/typescript
@@ -615,6 +618,33 @@ importers:
       prettier:
         specifier: ^3.2.5
         version: 3.2.5
+      typescript:
+        specifier: ^5.4.3
+        version: 5.4.3
+
+  tooling/themes:
+    devDependencies:
+      '@local/eslint-config':
+        specifier: workspace:*
+        version: link:../eslint
+      '@local/prettier-config':
+        specifier: workspace:*
+        version: link:../prettier
+      '@local/tsconfig':
+        specifier: workspace:*
+        version: link:../typescript
+      '@types/eslint':
+        specifier: ^8.56.6
+        version: 8.56.6
+      eslint:
+        specifier: ^8.57.0
+        version: 8.57.0
+      prettier:
+        specifier: ^3.2.5
+        version: 3.2.5
+      tailwindcss:
+        specifier: ^3.4.1
+        version: 3.4.1
       typescript:
         specifier: ^5.4.3
         version: 5.4.3
