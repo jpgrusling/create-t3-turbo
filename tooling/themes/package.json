@@ -7,8 +7,7 @@
     "**/*.css"
   ],
   "exports": {
-    "./default.css": "./src/default/index.css",
-    "./package.json": "./package.json"
+    "./default.css": "./src/default/index.css"
   },
   "license": "MIT",
   "scripts": {
