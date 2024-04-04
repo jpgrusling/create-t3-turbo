@@ -1,0 +1,65 @@
+{
+  "name": "@local/storybook-config",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "exports": {
+    "./main": "./.storybook/main.ts",
+    "./preview": "./.storybook/preview.ts",
+    "./package.json": "./package.json"
+  },
+  "license": "MIT",
+  "scripts": {
+    "clean": "rm -rf .turbo node_modules",
+    "format": "prettier --check . --ignore-path ../../.gitignore",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@storybook/addon-a11y": "^7.6.17",
+    "@storybook/addon-actions": "^7.6.17",
+    "@storybook/addon-essentials": "^7.6.17",
+    "@storybook/addon-interactions": "^7.6.17",
+    "@storybook/addon-links": "^7.6.17",
+    "@storybook/addon-onboarding": "^1.0.11",
+    "@storybook/addon-styling-webpack": "^1.0.0",
+    "@storybook/addon-viewport": "^7.6.17",
+    "@storybook/blocks": "^7.6.17",
+    "@storybook/nextjs": "^7.6.17",
+    "@storybook/react": "^7.6.17",
+    "@storybook/react-webpack5": "^7.6.17",
+    "@storybook/test": "^7.6.17",
+    "@storybook/types": "^7.6.17",
+    "css-loader": "^6.10.0",
+    "postcss-loader": "^8.1.1",
+    "storybook": "7.6.17",
+    "style-loader": "^3.3.4",
+    "tsconfig-paths-webpack-plugin": "^4.1.0",
+    "webpack": "^5.91.0"
+  },
+  "devDependencies": {
+    "@local/eslint-config": "workspace:*",
+    "@local/prettier-config": "workspace:*",
+    "@local/tsconfig": "workspace:*",
+    "eslint": "^8.57.0",
+    "prettier": "^3.2.5",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "typescript": "^5.4.3"
+  },
+  "peerDependencies": {
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "extends": [
+      "@local/eslint-config/base",
+      "@local/eslint-config/react"
+    ]
+  },
+  "prettier": "@local/prettier-config"
+}
