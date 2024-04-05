@@ -54,8 +54,8 @@
   },
   "eslintConfig": {
     "extends": [
-      "@local/eslint-config/react",
-      "@local/eslint-config/base"
+      "@local/eslint-config/base",
+      "@local/eslint-config/react"
     ]
   },
   "prettier": "@local/prettier-config"
