@@ -1,6 +1,6 @@
 /** @type {import('eslint').Linter.Config} */
 const config = {
-  extends: ['plugin:@shopify/react', 'plugin:jsx-a11y/recommended'],
+  extends: ['plugin:@shopify/react', 'plugin:jsx-a11y/recommended', './base'],
   rules: {
     'jsx-a11y/label-has-associated-control': [
       'error',
