@@ -1,7 +1,7 @@
 import { type FC, type ReactNode } from 'react'
+import { Flex, type FlexProps } from '~components/Flex'
 
-import { Flex, type FlexProps } from '../Flex'
-import { banner, type BannerVariantsProps } from './variants'
+import { banner, type BannerVariantsProps } from './banner.variants'
 
 export type BannerProps = FlexProps &
   BannerVariantsProps & {

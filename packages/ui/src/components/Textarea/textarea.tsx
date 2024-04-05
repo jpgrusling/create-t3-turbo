@@ -1,6 +1,6 @@
 import {
-  type ComponentProps,
   forwardRef,
+  type ComponentProps,
   type ForwardRefRenderFunction,
 } from 'react'
 
@@ -22,9 +22,7 @@ export const TextareaInner: ForwardRefRenderFunction<
     'sm:text-sm sm:leading-6',
   )
 
-  return (
-    <textarea className={cn(classNames, className)} {...rest} ref={ref} />
-  )
+  return <textarea className={cn(classNames, className)} {...rest} ref={ref} />
 }
 
 export const Textarea = forwardRef(TextareaInner)

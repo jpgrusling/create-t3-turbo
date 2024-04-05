@@ -8,7 +8,8 @@ import {
   type PolymorphicForwardedRef,
   type PolymorphicProps,
 } from '@axa-ch/react-polymorphic-types'
-import { badge, type BadgeVariantsProps } from '~components/Badge/variants'
+
+import { badge, type BadgeVariantsProps } from './badge.variants'
 
 export const BadgeDefaultElement: ElementType = 'span'
 export type BadgeAllowedElements = 'div' | 'span'

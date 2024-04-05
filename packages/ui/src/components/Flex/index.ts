@@ -1,3 +1,3 @@
-export * from './Column'
-export * from './Flex'
-export * from './Row'
+export * from './column'
+export * from './flex'
+export * from './row'

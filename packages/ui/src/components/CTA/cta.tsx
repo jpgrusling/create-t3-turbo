@@ -1,23 +1,22 @@
 import {
-  type ComponentProps,
   forwardRef,
+  type ComponentProps,
   type ForwardRefRenderFunction,
   type ReactNode,
 } from 'react'
+import { Heading } from '~components/Heading'
+import { Text } from '~components/Text'
 
 import {
   cta,
   ctaBody,
-  type CTABodyVariantsProps,
   ctaEyebrow,
-  type CTAEyebrowVariantsProps,
   ctaHeading,
+  type CTABodyVariantsProps,
+  type CTAEyebrowVariantsProps,
   type CTAHeadingVariantsProps,
   type CTAVariantsProps,
-} from '~components/CTA/variants'
-
-import { Heading } from '~components/Heading'
-import { Text } from '~components/Text'
+} from './cta.variants'
 
 export type CTABlockProps = ComponentProps<'div'> &
   CTAVariantsProps &

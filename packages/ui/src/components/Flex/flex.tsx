@@ -1,16 +1,15 @@
 import {
-  type ComponentPropsWithoutRef,
   createElement,
-  type ElementType,
   forwardRef,
+  type ComponentPropsWithoutRef,
+  type ElementType,
 } from 'react'
-
 import {
   type PolymorphicForwardedRef,
   type PolymorphicProps,
 } from '@axa-ch/react-polymorphic-types'
 
-import { flex, type FlexVariantsProps } from './variants'
+import { flex, type FlexVariantsProps } from './flex.variants'
 
 export const FlexDefaultElement: ElementType = 'div'
 export type FlexAllowedElements =
@@ -44,7 +43,7 @@ const FlexInner = <T extends FlexAllowedElements>(
   }: FlexProps<T>,
   ref: PolymorphicForwardedRef<T>,
 ) => {
-  const element: FlexAllowedElements = as || FlexDefaultElement
+  const element: FlexAllowedElements = as ?? FlexDefaultElement
 
   return createElement(element, {
     ...rest,

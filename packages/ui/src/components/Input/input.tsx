@@ -1,12 +1,12 @@
 import {
-  type ComponentProps,
   forwardRef,
+  type ComponentProps,
   type ForwardRefRenderFunction,
   type ReactNode,
 } from 'react'
+import { Flex } from '~components/Flex'
 
 import { cn } from '~/utils/cn'
-import { Flex } from '~components/Flex'
 
 export type InputProps = ComponentProps<'input'> & {
   leadingContent?: ReactNode
@@ -20,7 +20,7 @@ const InputInner: ForwardRefRenderFunction<HTMLInputElement, InputProps> = (
   const { className, leadingContent, trailingContent, ...rest } = props
 
   const containerClassNames = cn(
-    'w-fill relative rounded-lg border border-gray-300 shadow-sm focus-within:outline focus-within:outline-1 focus-within:outline-primary',
+    'w-fill focus-within:outline-primary relative rounded-lg border border-gray-300 shadow-sm focus-within:outline focus-within:outline-1',
     className,
   )
 

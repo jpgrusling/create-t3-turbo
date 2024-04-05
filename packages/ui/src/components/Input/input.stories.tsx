@@ -1,7 +1,7 @@
 import { type Meta, type StoryObj } from '@storybook/react'
 import { Logo } from '~svg/Logo'
 
-import { Input, type InputProps } from './index'
+import { Input, type InputProps } from './input'
 
 const Component: Meta<typeof Input> = {
   component: Input,

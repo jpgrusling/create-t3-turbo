@@ -1,6 +1,6 @@
 import { type Meta, type StoryObj } from '@storybook/react'
 
-import { CTABlock } from './index'
+import { CTABlock } from './cta'
 
 const Component: Meta<typeof CTABlock> = {
   component: CTABlock,

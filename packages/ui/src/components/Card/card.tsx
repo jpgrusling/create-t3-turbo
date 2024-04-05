@@ -1,20 +1,20 @@
 import {
-  type ComponentProps,
   forwardRef,
+  type ComponentProps,
   type ForwardRefRenderFunction,
   type ReactNode,
 } from 'react'
+import { Heading } from '~components/Heading'
+import { Text } from '~components/Text'
 
 import {
   card,
   cardBody,
-  type CardBodyVariantsProps,
   cardHeading,
+  type CardBodyVariantsProps,
   type CardHeadingVariantsProps,
   type CardVariantsProps,
-} from '~components/Card/variants'
-import { Heading } from '~components/Heading'
-import { Text } from '~components/Text'
+} from './card.variants'
 
 export type CardProps = ComponentProps<'div'> &
   CardVariantsProps &

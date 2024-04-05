@@ -1,8 +1,7 @@
 import { forwardRef } from 'react'
-
 import { type PolymorphicForwardedRef } from '@axa-ch/react-polymorphic-types'
 
-import { Flex, type FlexAllowedElements, type FlexProps } from './Flex'
+import { Flex, type FlexAllowedElements, type FlexProps } from './flex'
 
 export type RowProps<T extends FlexAllowedElements> = Omit<
   FlexProps<T>,

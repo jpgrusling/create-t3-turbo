@@ -1,16 +1,15 @@
 import {
-  type ComponentPropsWithoutRef,
   createElement,
-  type ElementType,
   forwardRef,
+  type ComponentPropsWithoutRef,
+  type ElementType,
 } from 'react'
-
 import {
   type PolymorphicForwardedRef,
   type PolymorphicProps,
 } from '@axa-ch/react-polymorphic-types'
 
-import { text, type TextVariantsProps } from './variants'
+import { text, type TextVariantsProps } from './text.variants'
 
 export const TextDefaultElement: ElementType = 'div'
 export type TextAllowedElements = 'div' | 'p' | 'span' | 'pre' | 'code'

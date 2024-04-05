@@ -1,10 +1,10 @@
 import { type Meta, type StoryObj } from '@storybook/react'
 
-import { Row, type RowProps } from './index'
+import { Flex, type FlexProps } from './flex'
 
-const Component: Meta<typeof Row> = {
-  component: Row,
-  title: 'Static/Flex/Row',
+const Component: Meta<typeof Flex> = {
+  component: Flex,
+  title: 'Static/Flex/Flex',
   args: {
     as: 'div',
     reverse: false,
@@ -14,23 +14,24 @@ const Component: Meta<typeof Row> = {
     wrap: 'wrap',
     grow: false,
     shrink: false,
+    direction: 'column',
     children: Array(10)
       .fill(undefined)
       .map((_v, i) => (
         <div
-          className="basis-1/3 border-2 border-orange-200 bg-primary p-4 text-white"
+          className="basis-1/3 border-2 border-orange-200 bg-brandPrimary p-4 text-white"
           // eslint-disable-next-line react/no-array-index-key
           key={i}
         >
           Cell {i}
         </div>
       )),
-  } satisfies RowProps<'div'>,
+  } satisfies FlexProps,
 }
 
 export default Component
 
-type Story = StoryObj<typeof Row>
+type Story = StoryObj<typeof Flex>
 
 export const Default: Story = {
   args: {},

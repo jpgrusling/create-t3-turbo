@@ -9,7 +9,7 @@ import {
   type PolymorphicProps,
 } from '@axa-ch/react-polymorphic-types'
 
-import { heading, type HeadingVariantsProps } from './variants'
+import { heading, type HeadingVariantsProps } from './heading.variants'
 
 export const HeadingDefaultElement: ElementType = 'h1'
 export type HeadingAllowedElements = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6'
@@ -25,7 +25,7 @@ const HeadingInner = <T extends HeadingAllowedElements>(
   { as, align, className, children, ...rest }: HeadingProps<T>,
   ref: PolymorphicForwardedRef<T>,
 ) => {
-  const element: HeadingAllowedElements = as || HeadingDefaultElement
+  const element: HeadingAllowedElements = as ?? HeadingDefaultElement
 
   return createElement(
     element,
