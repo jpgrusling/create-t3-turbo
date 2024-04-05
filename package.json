@@ -21,6 +21,7 @@
     "packages:sync": "syncpack",
     "packages:update": "npm-check-updates -u --install",
     "postinstall": "pnpm lint:ws",
+    "storybook": "turbo storybook",
     "typecheck": "turbo typecheck"
   },
   "devDependencies": {

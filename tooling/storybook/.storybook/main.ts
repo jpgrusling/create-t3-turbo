@@ -1,6 +1,5 @@
-/* eslint-disable storybook/no-uninstalled-addons */
 import { dirname, join } from 'path'
-import type { StorybookConfig } from '@storybook/react-webpack5'
+import { type StorybookConfig } from '@storybook/react-webpack5'
 
 const getAbsolutePath = (packageName: string): string =>
   dirname(require.resolve(join(packageName, 'package.json')))
@@ -30,7 +29,7 @@ export const config: StorybookConfig = {
               {
                 // Gets options from `postcss.config.js` in your project root
                 loader: 'postcss-loader',
-                // options: { implementation: require.resolve('postcss') },
+                options: { implementation: require.resolve('postcss') },
               },
             ],
           },

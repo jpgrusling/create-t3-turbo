@@ -7,9 +7,9 @@
     "**/*.css"
   ],
   "exports": {
-    "./main": "./.storybook/main.ts",
-    "./preview": "./.storybook/preview.ts",
-    "./package.json": "./package.json"
+    ".": "./index.ts",
+    "./index": "./index.ts",
+    "./style.css": "./src/styles/index.css"
   },
   "license": "MIT",
   "scripts": {
@@ -19,6 +19,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@etchteam/storybook-addon-css-variables-theme": "^2.0.6",
     "@storybook/addon-a11y": "^7.6.17",
     "@storybook/addon-actions": "^7.6.17",
     "@storybook/addon-essentials": "^7.6.17",
@@ -57,8 +58,8 @@
   "eslintConfig": {
     "root": true,
     "extends": [
-      "@local/eslint-config/base",
-      "@local/eslint-config/react"
+      "@local/eslint-config/react",
+      "@local/eslint-config/base"
     ]
   },
   "prettier": "@local/prettier-config"
