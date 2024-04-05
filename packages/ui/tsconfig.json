@@ -3,6 +3,12 @@
     "baseUrl": ".",
     "jsx": "preserve",
     "lib": ["dom", "dom.iterable", "ES2022"],
+    "paths": {
+      "~/*": ["./src/*"],
+      "~components/*": ["./src/components/*"],
+      "~svg/*": ["./src/svg/*"],
+      "~utils/*": ["./src/utils/*"]
+    },
     "tsBuildInfoFile": "node_modules/.cache/tsbuildinfo.json"
   },
   "exclude": ["node_modules"],
