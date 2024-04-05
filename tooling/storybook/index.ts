@@ -1,2 +1,2 @@
-export { config } from './.storybook/main'
-export { preview } from './.storybook/preview'
+export * from './.storybook/main'
+export * from './.storybook/preview'

@@ -8,7 +8,6 @@
   ],
   "exports": {
     ".": "./index.ts",
-    "./index": "./index.ts",
     "./style.css": "./src/styles/index.css"
   },
   "license": "MIT",
