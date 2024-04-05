@@ -59,7 +59,7 @@
     ["cx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"],
     ["(?:twMerge|twJoin|cn)\\(([^\\);]*)[\\);]", "[`'\"`]([^'\"`,;]*)[`'\"`]"]
   ],
-  "tailwindCSS.experimental.configFile": "./tooling/tailwind/web.ts",
+  "tailwindCSS.experimental.configFile": "./tooling/tailwind/src/tailwind.ts",
   "typescript.enablePromptUseWorkspaceTsdk": true,
   "typescript.preferences.autoImportFileExcludePatterns": [
     "next/router.d.ts",
