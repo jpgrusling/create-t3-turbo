@@ -18,7 +18,7 @@ const Component: Meta<typeof Row> = {
       .fill(undefined)
       .map((_v, i) => (
         <div
-          className="bg-primary basis-1/3 border-2 border-orange-200 p-4 text-white"
+          className="basis-1/3 border-2 border-orange-200 bg-brandPrimary p-4 text-white"
           // eslint-disable-next-line react/no-array-index-key
           key={i}
         >
