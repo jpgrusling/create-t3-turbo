@@ -21,6 +21,7 @@
     "tailwind",
     "tailwindcss",
     "Terrateam",
+    "tsbuildinfo",
     "tsup",
     "turborepo"
   ],
