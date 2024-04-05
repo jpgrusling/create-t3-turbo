@@ -39,6 +39,7 @@
     "@local/prettier-config": "workspace:*",
     "@local/storybook-config": "workspace:*",
     "@local/tailwind-config": "workspace:*",
+    "@local/themes": "workspace:*",
     "@local/tsconfig": "workspace:*",
     "@types/react": "^18.2.69",
     "eslint": "^8.57.0",

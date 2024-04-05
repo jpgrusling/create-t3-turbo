@@ -444,6 +444,9 @@ importers:
       '@local/tailwind-config':
         specifier: workspace:*
         version: link:../../tooling/tailwind
+      '@local/themes':
+        specifier: workspace:*
+        version: link:../../tooling/themes
       '@local/tsconfig':
         specifier: workspace:*
         version: link:../../tooling/typescript
