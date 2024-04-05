@@ -32,6 +32,7 @@
     "@local/tailwind-config": "workspace:*",
     "@local/themes": "workspace:*",
     "@local/tsconfig": "workspace:*",
+    "@types/prop-types": "^15.7.12",
     "@types/react": "^18.2.69",
     "eslint": "^8.57.0",
     "prettier": "^3.2.5",
