@@ -16,10 +16,10 @@ export type LinkProps = ComponentProps<'a'> &
 export const LinkInner: ForwardRefRenderFunction<
   HTMLAnchorElement,
   LinkProps
-> = ({ asChild, className, children, size, ...props }, ref) => {
+> = ({ asChild, className, children, kind, size, ...props }, ref) => {
   const Comp = asChild ? Slot : 'a'
   return (
-    <Comp className={cn(link({ size, className }))} ref={ref} {...props}>
+    <Comp className={cn(link({ kind, size, className }))} ref={ref} {...props}>
       {children}
     </Comp>
   )

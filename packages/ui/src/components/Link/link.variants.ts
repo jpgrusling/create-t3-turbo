@@ -4,9 +4,18 @@ import { type ClassProp } from 'class-variance-authority/types'
 import { cn } from '~/utils/cn'
 
 export const linkVariants = cva(
-  ['text-[16px] leading-[20.8px]', 'text-linkText', 'tracking-[-0.048px]'],
+  [
+    'text-[16px] leading-[20.8px]',
+    'text-textLink hover:text-textLinkHover',
+    'tracking-[-0.048px]',
+    'cursor-pointer',
+  ],
   {
     variants: {
+      kind: {
+        secondary: ['hover:text-textLinkSecondaryHover text-textLinkSecondary'],
+        tertiary: ['hover:text-textLinkTertiaryHover text-textLinkTertiary'],
+      },
       size: {
         large: ['text-[18px] leading-[25.2px]', 'tracking-normal'],
         small: ['text-[14px] leading-[19.6px]', 'tracking-[-0.042px]'],
