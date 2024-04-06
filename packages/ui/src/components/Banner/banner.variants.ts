@@ -8,7 +8,8 @@ export const bannerVariants = cva(
   {
     variants: {
       kind: {
-        primary: ['text-textPrimary bg-brandPrimary'],
+        primary: ['bg-brandPrimary text-textParagraphInverse'],
+        secondary: ['bg-brandSecondaryLt text-textParagraph'],
         gray: [['bg-gray-50 text-gray-600 ']],
         red: [['bg-red-50 text-red-700 ']],
         yellow: [['bg-yellow-50 text-yellow-800 ']],
