@@ -5,6 +5,7 @@ import {
   type ReactNode,
 } from 'react'
 import { Flex } from '~components/Flex'
+import { FormControl } from '~components/FormControl'
 
 import { cn } from '~/utils/cn'
 
@@ -19,10 +20,7 @@ const InputInner: ForwardRefRenderFunction<HTMLInputElement, InputProps> = (
 ) => {
   const { className, leadingContent, trailingContent, ...rest } = props
 
-  const containerClassNames = cn(
-    'w-fill relative rounded-lg border border-gray-300 shadow focus-within:outline focus-within:outline-1 focus-within:outline-brandPrimary',
-    className,
-  )
+  const containerClassNames = cn('w-fill relative', className)
 
   const inputContainerClassNames = cn(
     leadingContent ? 'pl-10' : 'pl-4',
@@ -43,9 +41,9 @@ const InputInner: ForwardRefRenderFunction<HTMLInputElement, InputProps> = (
           {leadingContent}
         </Flex>
       )}
-      <div className={inputContainerClassNames}>
+      <FormControl className={inputContainerClassNames}>
         <input {...rest} className={cn(classNames)} ref={ref} />
-      </div>
+      </FormControl>
       {trailingContent && (
         <Flex
           className="pointer-events-none absolute inset-y-0 right-0 py-2 pr-1"
