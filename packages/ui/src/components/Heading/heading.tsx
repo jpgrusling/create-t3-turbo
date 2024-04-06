@@ -21,21 +21,44 @@ export type HeadingProps<
   T extends HeadingAllowedElements = typeof HeadingDefaultElement,
 > = PolymorphicProps<HeadingOwnProps<T>, T, HeadingAllowedElements>
 
-const HeadingInner = <T extends HeadingAllowedElements>(
-  { as, align, className, children, ...rest }: HeadingProps<T>,
-  ref: PolymorphicForwardedRef<T>,
-) => {
-  const element: HeadingAllowedElements = as ?? HeadingDefaultElement
+const getTag = (
+  display: HeadingVariantsProps['display'],
+  as?: HeadingAllowedElements,
+): HeadingAllowedElements => {
+  if (as) {
+    return as
+  }
 
-  return createElement(
-    element,
+  switch (display) {
+    case 'h1':
+      return 'h1'
+    case 'h2':
+      return 'h2'
+    case 'h3':
+      return 'h3'
+    case 'h4':
+      return 'h4'
+    case 'h5':
+      return 'h5'
+    case 'h6':
+      return 'h6'
+    default:
+      return 'h1'
+  }
+}
+
+const HeadingInner = <T extends HeadingAllowedElements>(
+  { as, className, children, display, ...rest }: HeadingProps<T>,
+  ref: PolymorphicForwardedRef<T>,
+) =>
+  createElement(
+    getTag(display, as),
     {
       ...rest,
       ref,
-      className: heading({ as, align, className }),
+      className: heading({ display, className }),
     },
     children,
   )
-}
 
 export const Heading = forwardRef(HeadingInner)

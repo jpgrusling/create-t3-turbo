@@ -7,7 +7,6 @@ const Component: Meta<typeof Heading> = {
   title: 'Static/Heading',
   args: {
     children: 'Example Heading',
-    align: 'left',
   } satisfies HeadingProps,
   argTypes: {
     as: {
@@ -21,6 +20,21 @@ const Component: Meta<typeof Heading> = {
 export default Component
 
 type Story = StoryObj<typeof Heading>
+
+export const Default: Story = {
+  args: {
+    as: 'h1',
+    display: 'base',
+    children: 'Generic Heading',
+  } satisfies HeadingProps,
+  argTypes: {
+    as: {
+      table: {
+        disable: false,
+      },
+    },
+  },
+}
 
 export const H1: Story = {
   name: 'H1',

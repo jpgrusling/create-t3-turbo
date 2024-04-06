@@ -9,23 +9,20 @@ export const headingVariants = cva(
   ['font-bold', 'text-black', 'dark:text-white'],
   {
     variants: {
-      as: {
+      display: {
         h1: [...headlines, 'text-[64px] leading-[76.8px]'],
         h2: [...headlines, 'text-[56px] leading-[67.2px]'],
         h3: [...headlines, 'text-[38px] leading-[45.6px]'],
         h4: [...headlines, 'text-[28px] leading-[33.6px]'],
         h5: [...headlines, 'text-[20px] leading-[24px]'],
         h6: [...headlines, 'text-[18px] leading-[21.6px]'],
-      },
-      align: {
-        center: ['text-center'],
-        left: ['text-left'],
-        right: ['text-right'],
+        base: [...headlines, 'text-[16px] leading-[22.4px]'],
+        small: [...headlines, 'text-[14px] leading-[16.8px]'],
+        table: [...headlines, 'text-[14px] leading-[16.8px]'],
       },
     },
     defaultVariants: {
-      as: 'h1',
-      align: 'left',
+      display: 'h1',
     },
   },
 )
