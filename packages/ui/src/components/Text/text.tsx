@@ -11,7 +11,7 @@ import {
 
 import { text, type TextVariantsProps } from './text.variants'
 
-export const TextDefaultElement: ElementType = 'div'
+export const TextDefaultElement: ElementType = 'p'
 export type TextAllowedElements = 'div' | 'p' | 'span' | 'pre' | 'code'
 
 export type TextOwnProps<T extends TextAllowedElements> =

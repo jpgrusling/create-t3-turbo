@@ -31,7 +31,6 @@ export const Default: Story = {
   args: {
     as: 'p',
     children: text,
-    display: 'body',
   },
   argTypes: {
     as: {
@@ -47,7 +46,6 @@ export const Paragraph: Story = {
   args: {
     as: 'p',
     children: text,
-    display: 'body',
   },
 }
 
@@ -56,7 +54,6 @@ export const DivBody: Story = {
   args: {
     as: 'div',
     children: text,
-    display: 'body',
   },
 }
 
@@ -65,7 +62,6 @@ export const PreBody: Story = {
   args: {
     as: 'pre',
     children: text,
-    display: 'body',
   },
 }
 
@@ -74,6 +70,5 @@ export const SpanBody: Story = {
   args: {
     as: 'span',
     children: text,
-    display: 'body',
   },
 }
