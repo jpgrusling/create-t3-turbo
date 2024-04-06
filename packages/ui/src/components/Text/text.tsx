@@ -22,20 +22,10 @@ export type TextProps<
 > = PolymorphicProps<TextOwnProps<T>, T, TextAllowedElements>
 
 const TextInner = <T extends TextAllowedElements>(
-  {
-    as,
-    children,
-    className,
-    mode,
-    weight,
-    italic,
-    strikethrough,
-    underline,
-    ...rest
-  }: TextProps<T>,
+  { as, children, className, display, ...rest }: TextProps<T>,
   ref: PolymorphicForwardedRef<T>,
 ) => {
-  const element: TextAllowedElements = as || TextDefaultElement
+  const element: TextAllowedElements = as ?? TextDefaultElement
 
   return createElement(
     element,
@@ -43,11 +33,7 @@ const TextInner = <T extends TextAllowedElements>(
       ...rest,
       ref,
       className: text({
-        mode,
-        weight,
-        italic,
-        strikethrough,
-        underline,
+        display,
         className,
       }),
     },
