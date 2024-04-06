@@ -8,7 +8,7 @@ const config = {
 }
 
 export default {
-  content: ['src/**/*.{ts,tsx}'],
+  content: ['./src/**/*.{ts,tsx}'],
   darkMode: ['class', '[data-mode="dark"]'],
   theme: {
     extend: config,

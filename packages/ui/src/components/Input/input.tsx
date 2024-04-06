@@ -20,7 +20,7 @@ const InputInner: ForwardRefRenderFunction<HTMLInputElement, InputProps> = (
   const { className, leadingContent, trailingContent, ...rest } = props
 
   const containerClassNames = cn(
-    'w-fill focus-within:outline-primary relative rounded-lg border border-gray-300 shadow-sm focus-within:outline focus-within:outline-1',
+    'w-fill relative rounded-lg border border-gray-300 shadow focus-within:outline focus-within:outline-1 focus-within:outline-brandPrimary',
     className,
   )
 
