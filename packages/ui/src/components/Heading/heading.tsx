@@ -56,7 +56,7 @@ const HeadingInner = <T extends HeadingAllowedElements>(
     {
       ...rest,
       ref,
-      className: heading({ display, className }),
+      className: heading({ display: display ?? as, className }),
     },
     children,
   )
