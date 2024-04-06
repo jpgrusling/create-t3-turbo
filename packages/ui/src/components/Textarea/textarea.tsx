@@ -5,6 +5,8 @@ import {
 } from 'react'
 import { FormControl } from '~components/FormControl'
 
+import { cn } from '~/utils/cn'
+
 export type TextareaProps = ComponentProps<'textarea'>
 
 export const TextareaInner: ForwardRefRenderFunction<
@@ -14,7 +16,7 @@ export const TextareaInner: ForwardRefRenderFunction<
   const { className, ...rest } = props
 
   return (
-    <FormControl className={className}>
+    <FormControl className={cn('p-2', className)}>
       <textarea {...rest} ref={ref} />
     </FormControl>
   )
