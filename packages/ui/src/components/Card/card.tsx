@@ -72,7 +72,6 @@ export const CardInner: ForwardRefRenderFunction<HTMLDivElement, CardProps> = (
       {body && (
         <Text
           as="p"
-          mode="body"
           className={cardBody({
             kind,
             textAlignment,

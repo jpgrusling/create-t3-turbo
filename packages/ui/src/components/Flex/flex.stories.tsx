@@ -4,7 +4,7 @@ import { Flex, type FlexProps } from './flex'
 
 const Component: Meta<typeof Flex> = {
   component: Flex,
-  title: 'Static/Flex/Flex',
+  title: 'Layout/Flex/Flex',
   args: {
     as: 'div',
     reverse: false,

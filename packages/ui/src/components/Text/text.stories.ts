@@ -1,10 +1,10 @@
 import { type Meta, type StoryObj } from '@storybook/react'
 
-import { Text, type TextProps } from './index'
+import { Text, type TextProps } from './text'
 
 const Component: Meta<typeof Text> = {
   component: Text,
-  title: 'Static/Text',
+  title: 'Typography/Text',
   args: {
     children: 'Example Text',
   } satisfies TextProps,

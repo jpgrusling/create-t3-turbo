@@ -56,7 +56,7 @@ const CTABlockInner: ForwardRefRenderFunction<HTMLDivElement, CTABlockProps> = (
           {eyebrow && (
             <Text
               as="p"
-              mode="bodySmall"
+              display="eyebrow"
               className={ctaEyebrow({
                 kind,
                 textAlignment,

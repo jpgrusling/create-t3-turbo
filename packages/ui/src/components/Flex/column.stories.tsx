@@ -4,7 +4,7 @@ import { Column, type ColumnProps } from './column'
 
 const Component: Meta<typeof Column> = {
   component: Column,
-  title: 'Static/Flex/Column',
+  title: 'Layout/Flex/Column',
   args: {
     as: 'div',
     reverse: false,

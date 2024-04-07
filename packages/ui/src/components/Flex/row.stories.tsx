@@ -4,7 +4,7 @@ import { Row, type RowProps } from './row'
 
 const Component: Meta<typeof Row> = {
   component: Row,
-  title: 'Static/Flex/Row',
+  title: 'Layout/Flex/Row',
   args: {
     as: 'div',
     reverse: false,

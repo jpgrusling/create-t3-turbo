@@ -1,10 +1,10 @@
 import { type Meta, type StoryObj } from '@storybook/react'
 
-import { Heading, type HeadingProps } from './index'
+import { Heading, type HeadingProps } from './heading'
 
 const Component: Meta<typeof Heading> = {
   component: Heading,
-  title: 'Static/Heading',
+  title: 'Typography/Heading',
   args: {
     children: 'Example Heading',
   } satisfies HeadingProps,

@@ -1,6 +1,6 @@
 import { type Meta, type StoryObj } from '@storybook/react'
 
-import { Banner, type BannerProps } from './index'
+import { Banner, type BannerProps } from './banner'
 
 const Component: Meta<typeof Banner> = {
   component: Banner,
