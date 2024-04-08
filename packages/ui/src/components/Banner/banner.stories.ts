@@ -4,7 +4,7 @@ import { Banner, type BannerProps } from './banner'
 
 const Component: Meta<typeof Banner> = {
   component: Banner,
-  title: 'Static/Banner',
+  title: 'Elements/Banner',
   args: {} satisfies BannerProps,
   argTypes: {},
   parameters: {
