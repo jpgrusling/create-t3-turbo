@@ -21,7 +21,7 @@ export const DividerInner: ForwardRefRenderFunction<
   HTMLDivElement,
   DividerProps
 > = ({ align, className, children, ...props }, ref) => (
-  <div className={cn('flex flex-row items-center p-2')} ref={ref} {...props}>
+  <div className={cn('flex flex-row items-center py-2')} ref={ref} {...props}>
     <div
       className={leftSection({
         align,
