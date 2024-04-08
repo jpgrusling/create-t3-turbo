@@ -8,11 +8,11 @@ export type ButtonProps = ComponentProps<'button'> &
   ButtonVariantsProps & { asChild?: boolean }
 
 const Button = forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ asChild, className, kind, size, ...rest }, ref) => {
+  ({ asChild, className, kind, shape, size, ...rest }, ref) => {
     const Comp = asChild ? Slot : 'button'
     return (
       <Comp
-        className={cn(button({ kind, size, className }))}
+        className={cn(button({ kind, shape, size, className }))}
         ref={ref}
         {...rest}
       />

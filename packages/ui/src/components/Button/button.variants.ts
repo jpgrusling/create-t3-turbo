@@ -5,12 +5,12 @@ import { cn } from '~/utils/cn'
 
 export const buttonVariants = cva(
   [
-    'font-semibold',
+    'text-[16px] leading-[19.2px]',
     'inline-flex',
-    'rounded-lg',
     'disabled:opacity-50',
-    'py-5 ',
-    'px-6',
+    'py-2.5 ',
+    'px-5',
+    'justify-center',
   ],
   {
     variants: {
@@ -44,14 +44,20 @@ export const buttonVariants = cva(
         ],
       },
       size: {
-        small: ['text-[12px]', 'py-2', 'px-3'],
-        default: ['text-[14px]', 'py-3', 'px-4'],
-        large: ['text-[16px]', 'py-4', 'px-5'],
+        extraSmall: ['py-1.5', 'px-3'],
+        small: ['text-[14px] leading-[16.8px]', 'py-2', 'px-4'],
+        large: ['text-[18px] leading-[21.6px]', 'py-3', 'px-6'],
+        extraLarge: ['py-3.5', 'px-8'],
+      },
+      shape: {
+        rectangle: ['rounded-none'],
+        roundedRectangle: ['rounded-md'],
+        circle: ['rounded-full'],
       },
     },
     defaultVariants: {
       kind: 'primary',
-      size: 'default',
+      shape: 'roundedRectangle',
     },
   },
 )
