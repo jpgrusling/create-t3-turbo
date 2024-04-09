@@ -1,28 +1,19 @@
 {
-  "name": "@local/auth",
+  "name": "@local/web",
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "exports": {
-    ".": {
-      "react-server": "./src/index.rsc.ts",
-      "default": "./src/index.ts"
-    },
-    "./env": "./env.ts"
-  },
-  "license": "MIT",
   "scripts": {
-    "clean": "rm -rf .turbo node_modules",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "clean": "git clean -xdf .next .turbo node_modules",
     "format": "prettier --check . --ignore-path ../../.gitignore",
-    "lint": "eslint .",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@local/db": "workspace:*",
-    "@auth/drizzle-adapter": "^0.8.1",
-    "@t3-oss/env-nextjs": "^0.9.2",
     "next": "^14.1.4",
-    "next-auth": "5.0.0-beta.16",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "zod": "^3.22.4"
@@ -30,15 +21,25 @@
   "devDependencies": {
     "@local/eslint-config": "workspace:*",
     "@local/prettier-config": "workspace:*",
+    "@local/tailwind-config": "workspace:*",
+    "@local/themes": "workspace:*",
     "@local/tsconfig": "workspace:*",
+    "@t3-oss/env-nextjs": "^0.9.2",
+    "@types/node": "^20.11.30",
+    "@types/react": "^18.2.69",
+    "@types/react-dom": "^18.2.22",
     "eslint": "^8.57.0",
+    "jiti": "^1.21.0",
     "prettier": "^3.2.5",
+    "tailwindcss": "^3.4.1",
     "typescript": "^5.4.3"
   },
   "eslintConfig": {
     "root": true,
     "extends": [
-      "@local/eslint-config/base"
+      "@local/eslint-config/base",
+      "@local/eslint-config/nextjs",
+      "@local/eslint-config/react"
     ]
   },
   "prettier": "@local/prettier-config"
