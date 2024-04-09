@@ -1,7 +1,7 @@
 import { cva, type VariantProps } from 'class-variance-authority'
 import { type ClassProp } from 'class-variance-authority/types'
 
-import { cn } from '~/utils/cn'
+import { cn } from '@local/ui/cn'
 
 export const leftSectionVariants = cva(['grow', 'me-2', 'h-px', 'bg-divider'], {
   variants: {

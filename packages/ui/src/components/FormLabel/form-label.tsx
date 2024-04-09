@@ -1,5 +1,6 @@
 import { type FC } from 'react'
-import { Text, type TextProps } from '~components/Text'
+
+import { Text, type TextProps } from '@local/ui/Text'
 
 export type FormLabelProps = Omit<TextProps<'label'>, 'as'>
 

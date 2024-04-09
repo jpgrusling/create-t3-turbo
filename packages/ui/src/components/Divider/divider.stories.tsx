@@ -1,5 +1,6 @@
 import { type Meta, type StoryObj } from '@storybook/react'
-import { Text } from '~components/Text'
+
+import { Text } from '@local/ui/Text'
 
 import { Divider, type DividerProps } from './divider'
 

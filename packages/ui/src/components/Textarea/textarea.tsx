@@ -3,9 +3,9 @@ import {
   type ComponentProps,
   type ForwardRefRenderFunction,
 } from 'react'
-import { FormControl } from '~components/FormControl'
 
-import { cn } from '~/utils/cn'
+import { cn } from '@local/ui/cn'
+import { FormControl } from '@local/ui/FormControl'
 
 export type TextareaProps = ComponentProps<'textarea'>
 

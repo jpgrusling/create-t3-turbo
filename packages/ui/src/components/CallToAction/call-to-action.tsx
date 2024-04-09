@@ -6,11 +6,11 @@ import {
   type ReactElement,
   type ReactNode,
 } from 'react'
-import { Divider } from '~components/Divider'
-import { type Heading } from '~components/Heading'
-import { Text } from '~components/Text'
 
-import { cn } from '~/utils/cn'
+import { cn } from '@local/ui/cn'
+import { Divider } from '@local/ui/Divider'
+import { type Heading } from '@local/ui/Heading'
+import { Text } from '@local/ui/Text'
 
 export type CallToActionProps = ComponentProps<'div'> & {
   eyebrow?: ReactElement<typeof Text>

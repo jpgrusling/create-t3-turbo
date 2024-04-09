@@ -1,7 +1,7 @@
 import { type ComponentProps, type FC, type PropsWithChildren } from 'react'
 import { Slot } from '@radix-ui/react-slot'
 
-import { cn } from '~/utils/cn'
+import { cn } from '@local/ui/cn'
 
 export type FormControlProps = PropsWithChildren<ComponentProps<typeof Slot>>
 

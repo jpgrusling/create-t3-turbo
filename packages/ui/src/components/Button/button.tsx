@@ -1,7 +1,8 @@
 import { forwardRef, type ComponentProps } from 'react'
 import { Slot } from '@radix-ui/react-slot'
 
-import { cn } from '~/utils/cn'
+import { cn } from '@local/ui/cn'
+
 import { button, type ButtonVariantsProps } from './button.variants'
 
 export type ButtonProps = ComponentProps<'button'> &

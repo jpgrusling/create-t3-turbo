@@ -4,7 +4,8 @@ import {
   type ForwardRefRenderFunction,
 } from 'react'
 
-import { cn } from '~/utils/cn'
+import { cn } from '@local/ui/cn'
+
 import {
   leftSection,
   rightSection,

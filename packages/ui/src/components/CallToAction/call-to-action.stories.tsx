@@ -1,7 +1,8 @@
 import { type Meta, type StoryObj } from '@storybook/react'
-import { Button } from '~components/Button'
-import { Heading } from '~components/Heading'
-import { Text } from '~components/Text'
+
+import { Button } from '@local/ui/Button'
+import { Heading } from '@local/ui/Heading'
+import { Text } from '@local/ui/Text'
 
 import { CallToAction } from './call-to-action'
 

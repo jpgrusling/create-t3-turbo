@@ -4,10 +4,10 @@ import {
   type ForwardRefRenderFunction,
   type ReactNode,
 } from 'react'
-import { Flex } from '~components/Flex'
-import { FormControl } from '~components/FormControl'
 
-import { cn } from '~/utils/cn'
+import { cn } from '@local/ui/cn'
+import { Flex } from '@local/ui/Flex'
+import { FormControl } from '@local/ui/FormControl'
 
 export type InputProps = ComponentProps<'input'> & {
   leadingContent?: ReactNode

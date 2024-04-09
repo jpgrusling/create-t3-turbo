@@ -1,14 +1,8 @@
 {
   "$schema": "https://turborepo.org/schema.json",
-  "experimentalUI": false,
+  "experimentalUI": true,
   "globalDependencies": ["**/.env"],
-  "globalEnv": [
-    "DATABASE_URL",
-    "AUTH_DISCORD_ID",
-    "AUTH_DISCORD_SECRET",
-    "AUTH_REDIRECT_PROXY_URL",
-    "AUTH_SECRET"
-  ],
+  "globalEnv": [],
   "pipeline": {
     "//#clean": {
       "cache": false

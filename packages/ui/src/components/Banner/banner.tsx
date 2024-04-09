@@ -1,5 +1,6 @@
 import { type FC, type ReactNode } from 'react'
-import { Flex, type FlexProps } from '~components/Flex'
+
+import { Flex, type FlexProps } from '@local/ui/Flex'
 
 import { banner, type BannerVariantsProps } from './banner.variants'
 

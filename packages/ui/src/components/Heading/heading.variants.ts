@@ -1,7 +1,7 @@
 import { cva, type VariantProps } from 'class-variance-authority'
 import { type ClassProp } from 'class-variance-authority/types'
 
-import { cn } from '~/utils/cn'
+import { cn } from '@local/ui/cn'
 
 export const headingVariants = cva(['text-textHeadline', 'font-normal'], {
   variants: {
