@@ -1,6 +1,6 @@
 import { type Meta, type StoryObj } from '@storybook/react'
 
-import { Logo } from '@local/ui/svg'
+import { Logo } from '@local/ui/svg/Logo'
 
 import { Input, type InputProps } from './input'
 

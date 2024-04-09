@@ -6,7 +6,7 @@
   "exports": {
     "./cn": "./src/utils/cn.ts",
     "./*": "./src/components/*/index.ts",
-    "./svg": "./src/svg/index.ts"
+    "./svg/*": "./src/svg/*/index.tsx"
   },
   "license": "MIT",
   "scripts": {
