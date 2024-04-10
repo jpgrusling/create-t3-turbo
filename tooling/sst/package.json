@@ -1,0 +1,52 @@
+{
+  "name": "@local/sst-config",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "main": "dist/main.js",
+  "stacks": "dist/stacks.js",
+  "exports": {
+    ".": "./dist/main.js",
+    "./stacks": "./dist/stacks.js"
+  },
+  "targets": {
+    "main": {
+      "source": "./src/index.ts"
+    },
+    "stacks": {
+      "source": "./src/stacks/index.ts"
+    }
+  },
+  "license": "MIT",
+  "scripts": {
+    "build": "parcel build",
+    "clean": "rm -rf .turbo node_modules dist",
+    "format": "prettier --check . --ignore-path ../../.gitignore",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "aws-cdk-lib": "2.132.1",
+    "constructs": "10.3.0",
+    "sst": "2.41.4"
+  },
+  "devDependencies": {
+    "@local/eslint-config": "workspace:*",
+    "@local/prettier-config": "workspace:*",
+    "@local/tsconfig": "workspace:*",
+    "eslint": "^8.57.0",
+    "parcel": "^2.12.0",
+    "prettier": "^3.2.5",
+    "typescript": "^5.4.3"
+  },
+  "@parcel/transformer-js": {
+    "inlineEnvironment": false
+  },
+  "eslintConfig": {
+    "root": true,
+    "extends": [
+      "@local/eslint-config/base"
+    ]
+  },
+  "prettier": "@local/prettier-config"
+}
